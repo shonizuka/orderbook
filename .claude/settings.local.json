@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git remote:*)",
+      "Bash(gh repo:*)",
+      "Bash(git push:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(curl -s https://orderbook-production-b464.up.railway.app/health)",
+      "Bash(curl -s https://orderbook-production-b464.up.railway.app/api/ob/snapshot)",
+      "Bash(railway status:*)",
+      "Bash(npm install:*)",
+      "Bash(brew install:*)"
+    ]
+  }
+}
