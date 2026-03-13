@@ -15,5 +15,5 @@ USER appuser
 
 EXPOSE 8000
 
-# Run from /app so `import backend.*` resolves correctly
-CMD ["python", "-m", "uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000", "--loop", "uvloop", "--http", "h11", "--log-level", "info"]
+# Railway injects $PORT — fall back to 8000 for local dev
+CMD ["sh", "-c", "python -m uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-8000} --loop uvloop --http h11 --log-level info"]
