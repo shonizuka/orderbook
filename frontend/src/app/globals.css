@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes flash-green {
+    0%   { background-color: rgba(52, 211, 153, 0.25); }
+    100% { background-color: transparent; }
+  }
+  @keyframes flash-red {
+    0%   { background-color: rgba(248, 113, 113, 0.25); }
+    100% { background-color: transparent; }
+  }
+
+  .animate-flash-green {
+    animation: flash-green 400ms ease-out forwards;
+  }
+  .animate-flash-red {
+    animation: flash-red 400ms ease-out forwards;
+  }
+}
