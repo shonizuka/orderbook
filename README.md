@@ -3,12 +3,11 @@
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black)
 ![Redis](https://img.shields.io/badge/Redis-7-red)
-![Railway](https://img.shields.io/badge/Deployed-Railway-blueviolet)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://frontend-production-a0e3.up.railway.app)
+![Live Demo](https://img.shields.io/badge/Live%20Demo-offline-lightgrey)
 
 Real-time BTC-USD order book aggregator across 4 exchanges — Coinbase, Kraken, Binance, and Bitstamp. Built for market microstructure analysis with live anomaly detection.
 
-Live demo: https://frontend-production-a0e3.up.railway.app/
+> **Live demo unavailable** — the hosted instance has been taken down. To try it out, run the project locally using the instructions below.
 ---
 
 ## What it does
@@ -32,7 +31,7 @@ Each exchange has its own connector with auto-reconnect and heartbeat. Messages 
 | Connectors | Native WebSockets (websockets lib) |
 | Cache / Pub-Sub | Redis 7 |
 | Frontend | Next.js 14, TypeScript, Tailwind, Recharts |
-| Infra | Docker Compose, Railway |
+| Infra | Docker Compose |
 
 ## Run locally
 
